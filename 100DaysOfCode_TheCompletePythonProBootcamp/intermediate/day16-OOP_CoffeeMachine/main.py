@@ -2,11 +2,6 @@ from menu import Menu, MenuItem
 from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine
 
-# Create objects from MenuItem class
-espresso = MenuItem("espresso", water=50, milk=0, coffee=18, cost=1.5)
-latte = MenuItem("latte", water=200, milk=150, coffee=24, cost=2.5)
-cappuccino = MenuItem("cappuccino", water=250, milk=100, coffee=24, cost=3.0)
-
 # Create components of our coffee machine, using existing classes
 menu = Menu()
 coffee_maker = CoffeeMaker()
