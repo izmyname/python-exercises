@@ -1,5 +1,5 @@
 from turtle import Turtle, Screen
-from prettytable import PrettyTable
+# from prettytable import PrettyTable
 from pip._vendor.rich import align
 
 # Donatello = Turtle()
@@ -12,9 +12,9 @@ from pip._vendor.rich import align
 # Donatello.forward(11)
 
 
-# the_screen = Screen()
-# #print(the_screen.canvheight)
-# the_screen.exitonclick()
+the_screen = Screen()
+#print(the_screen.canvheight)
+the_screen.exitonclick()
 
 
 # # My solution
@@ -33,11 +33,11 @@ from pip._vendor.rich import align
 # print(table2)
 
 # left-aligned
-table3 = PrettyTable()
-table3.add_column("Pokemon Name", ["Pikachu", "Squirtle", "Charmander"])
-table3.add_column("Pokemon Type", ["Electric", "Water", "Fire"])
-table3.align = "l"
+# table3 = PrettyTable()
+# table3.add_column("Pokemon Name", ["Pikachu", "Squirtle", "Charmander"])
+# table3.add_column("Pokemon Type", ["Electric", "Water", "Fire"])
+# table3.align = "l"
 
-print(table3)
+# print(table3)
 
 
