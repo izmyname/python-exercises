@@ -5,7 +5,7 @@ MOVE_DISTANCE = 20
 UP = 90
 DOWN = 270
 LEFT = 180
-RIGHT = 360
+RIGHT = 0
 
 class Snake:
     
@@ -38,6 +38,14 @@ class Snake:
     
     def extend(self):
         self.add_segment(self.segments[-1].pos())
+        
+    def reset(self):
+        for seg in self.segments:
+            seg.goto(999, 999)
+            
+        self.segments.clear()
+        self.create_snake()
+        self.head = self.segments[0]
     
     def up(self):
         if self.head.heading() != DOWN:
