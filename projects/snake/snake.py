@@ -1,6 +1,7 @@
 from turtle import Turtle
 
 START = ((20, 0), (0, 0), (-20, 0))
+TURTLE_HELL = (999, 999)
 STEP = 20
 UP = 90
 LEFT = 180
@@ -33,7 +34,13 @@ class Snake:
         
     def extend_snake(self):
         self.create_segment(self.snake_segments[-1].pos())
-
+        
+    def reset_snake(self):
+        for seg in self.snake_segments:
+            seg.goto(TURTLE_HELL)
+        self.snake_segments.clear()
+        self.create_snake()
+        self.snake_head = self.snake_segments[0]
         
     def up(self):
         if self.snake_head.heading() != DOWN:

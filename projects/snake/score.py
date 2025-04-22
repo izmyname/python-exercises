@@ -10,16 +10,28 @@ class Scoreboard(Turtle):
         self.goto(0, 260)
         self.ht()
         self.score = 0
+        self.top_score()
         self.create_scoreboard()
 
     def update_score(self):
         self.score += 1
-        self.clear()
         self.create_scoreboard()
+
+    def top_score(self):
+        with open("./high_score.txt", "r") as get_last_score:
+            scores_list = get_last_score.readlines()
+            self.high_score = int(scores_list[-1].strip())
+        
         
     def create_scoreboard(self):
-        self.write(arg = f"Score: {self.score}", align = "center", font = FONT)
+        self.clear()
+        self.write(arg = f"Current score: {self.score} / Highest score: {self.high_score}", align = "center", font = FONT)
 
-    def game_over(self):
-        self.goto(0, 0)
-        self.write(arg = f"GAME OVER", align = "center", font = FONT)
+    def reset(self):
+        if self.score > self.high_score:
+            with open("./high_score.txt", "a") as save_last_score:
+                save_last_score.write(f"{self.score}\n")
+            self.high_score = self.score 
+            
+        self.score = 0
+        self.create_scoreboard()
