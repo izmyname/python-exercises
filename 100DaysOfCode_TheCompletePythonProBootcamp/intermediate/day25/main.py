@@ -75,7 +75,7 @@ total_black =(len(black))
 total_red =(len(cinnamon))
 
 squirrel_counting = {"Fur Color": ["Gray", "Black", "Red"],
-                     "Total COunt": [total_gray, total_black, total_red]}
+                     "Total Count": [total_gray, total_black, total_red]}
 
 squirrel_count = pandas.DataFrame(squirrel_counting)
 squirrel_count.to_csv("./squirrel_count.csv")
