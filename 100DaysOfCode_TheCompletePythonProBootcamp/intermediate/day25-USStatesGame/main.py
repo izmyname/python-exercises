@@ -31,12 +31,7 @@ def write_on_map(user_input, x_cor, y_cor):
 
 def states_to_learn():
 
-    states_to_learn = []
-
-    for s in states_list:
-        if not s in states_guessed:
-            states_to_learn.append(s)
-            
+    states_to_learn = [states for states in states_list if states not in states_guessed]
     states_to_learn_dict = {"States to learn": states_to_learn}
     data = pandas.DataFrame(states_to_learn_dict)
     data.to_csv("states_to_learn.csv")
