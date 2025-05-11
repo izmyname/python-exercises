@@ -1,0 +1,38 @@
+html{
+  background: black;
+}
+
+div{
+  width:50%;
+  margin-left: 25%;
+  margin-top: 100px;
+}
+
+img{
+  border: 5px solid white;
+  width: 100%;
+}
+
+h1{
+  font-family: "Libre Baskerville", serif;
+  font-weight: 900;
+  font-style: bold;
+  font-size:24px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+
+
+Resources:
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform - CSS text manipulation
+}
+
+p{
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:16px;
+  color: white;
+  text-align: center;
+}
