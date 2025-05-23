@@ -1,0 +1,10 @@
+body{
+    background-color: darkred;
+}
+h1{
+    color:aquamarine
+}
+.tehcat{
+    width: 400px;
+    border: 3px solid gray;
+}
