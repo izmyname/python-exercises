@@ -1,4 +1,4 @@
-*/*/__pycache__/*
-*/*/*/.env
-100DaysOfCode_TheCompletePythonProBootcamp/intermediate_plus/day46-Spotify/token.txt
-100DaysOfCode_TheCompletePythonProBootcamp/advanced/*/__pycache__/*
+__pycache__/
+.env
+token.txt
+.dS_Store
