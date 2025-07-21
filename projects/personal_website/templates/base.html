@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%block styles%}
+    {{bootstrap.load_css()}}
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/styles.css')}}" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+
+    {%endblock%}
+    <title>{%block title%}{%endblock%}</title>
+</head>
+<body  class="d-flex flex-column h-100">
+{% include "navbar.html" %}
+{%block content%}{%endblock%}
+{% include "footer.html" %}
+</body>
+</html>

@@ -1,0 +1,38 @@
+.avatar {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding-bottom: 2%
+
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+.color-white {
+    color:white;
+}
+
+.big-text {
+    font-size: larger;
+}
+
+.color-black {
+    background-color: black;
+}
+
+.btn-primary {
+    --bs-btn-bg: black;
+    --bs-btn-hover-bg: #424649;
+
+}

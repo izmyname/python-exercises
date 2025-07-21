@@ -1,0 +1,115 @@
+{%extends "base.html"%} {%block title%}My projects{%endblock%} {%block content%}
+
+<section id="portfolio">
+<div class="px-4 py-5 my-5 mt-4 mb- text-center">
+<h1 class="display-5 fw-bold">My projects</h1>
+</div>
+<div class="list-group">
+  <a
+    href="https://github.com/izmyname/python-exercises"
+    target="_blank"
+    class="list-group-item list-group-item-action d-flex gap-3 py-3">
+    <img
+      src="{{url_for ('static', filename='assets/github.png')}}"
+      alt="github icon"
+      width="32"
+      height="32"
+      class="rounded-circle flex-shrink-0" />
+    <div class="d-flex gap-2 w-100 justify-content-between">
+      <div>
+        <h6 class="mb-0">Python exercises</h6>
+        <p class="mb-0 opacity-75">Repo, where i store my attempts to do python-related projects. Mostly, from 100 Days of Code Python bootcamp</p>
+      </div>
+    </div>
+  </a>
+  <a
+    href="https://github.com/izmyname/portfolio_projects"
+    target="_blank"
+    class="list-group-item list-group-item-action d-flex gap-3 py-3">
+     <img
+      src="{{url_for ('static', filename='assets/github.png')}}"
+      alt="github icon"
+      width="32"
+      height="32"
+      class="rounded-circle flex-shrink-0" />
+    <div class="d-flex gap-2 w-100 justify-content-between">
+      <div>
+        <h6 class="mb-0">My portfolio projects</h6>
+        <p class="mb-0 opacity-75">
+          Repo, where I store small projects I made myself.
+        </p>
+      </div>
+    </div>
+  </a>
+  <a
+    href="https://github.com/izmyname/home-backup"
+    target="_blank"
+    class="list-group-item list-group-item-action d-flex gap-3 py-3">
+     <img
+      src="{{url_for ('static', filename='assets/github.png')}}"
+      alt="github icon"
+      width="32"
+      height="32"
+      class="rounded-circle flex-shrink-0" />
+    <div class="d-flex gap-2 w-100 justify-content-between">
+      <div>
+        <h6 class="mb-0">My dotfiles</h6>
+        <p class="mb-0 opacity-75">Repo with my personal Arch-Hyprland dotfiles.</p>
+      </div>
+    </div>
+  </a>
+   <a
+    href="https://wiki.hypr.land/Useful-Utilities/Systemd-start/"
+    target="_blank"
+    class="list-group-item list-group-item-action d-flex gap-3 py-3">
+     <img
+      src="{{url_for ('static', filename='assets/hypr.jpg')}}"
+      alt="github icon"
+      width="32"
+      height="32"
+      class="rounded-circle flex-shrink-0" />
+    <div class="d-flex gap-2 w-100 justify-content-between">
+      <div>
+        <h6 class="mb-0">Hyprland-UWSM startup</h6>
+        <p class="mb-0 opacity-75">Co-authored a technical article for the official Hyprland Wiki, contributing to community knowledge and documentation.</p>
+      </div>
+    </div>
+  </a>
+     <a
+    href="https://github.com/hyprwm/hyprpaper/pull/208"
+    target="_blank"
+    class="list-group-item list-group-item-action d-flex gap-3 py-3">
+     <img
+      src="{{url_for ('static', filename='assets/hypr.jpg')}}"
+      alt="github icon"
+      width="32"
+      height="32"
+      class="rounded-circle flex-shrink-0" />
+    <div class="d-flex gap-2 w-100 justify-content-between">
+      <div>
+        <h6 class="mb-0">Hyprpaper - systemd service</h6>
+        <p class="mb-0 opacity-75">Wrote a systemd service for Hyprpaper - a wallpaper utility for Hyprland.</p>
+      </div>
+    </div>
+  </a>
+       <a
+    href="https://github.com/hyprwm/hyprsunset/pull/19"
+    target="_blank"
+    class="list-group-item list-group-item-action d-flex gap-3 py-3">
+     <img
+      src="{{url_for ('static', filename='assets/hypr.jpg')}}"
+      alt="github icon"
+      width="32"
+      height="32"
+      class="rounded-circle flex-shrink-0" />
+    <div class="d-flex gap-2 w-100 justify-content-between">
+      <div>
+        <h6 class="mb-0">Hyprsunset - systemd service</h6>
+        <p class="mb-0 opacity-75">Wrote a systemd service for Hyprsunset - a blue light filter utility for Hyprland.</p>
+      </div>
+    </div>
+  </a>
+</div>
+<section>
+
+{%endblock%}

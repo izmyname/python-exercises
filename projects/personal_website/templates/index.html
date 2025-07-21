@@ -1,0 +1,22 @@
+{%extends "base.html"%} {%block title%}My portfolio - main page{%endblock%}
+{%block content%}
+<section id="intro">
+  <div class="px-4 py-5 my-5 text-center">
+    <img
+      class="d-block mx-auto mb-4 avatar"
+      src="{{url_for('static', filename='assets/profpic.jpg')}}"
+      alt="izmyname profile logo"
+        />
+    <h1 class="display-5 fw-bold">I'm known as Izmyname</h1>
+    <h2 class="display-5 mb-5">An aspiring python developer</h2>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">
+       Hi there! I'm Izmyname — welcome to my portfolio.
+This site was created as part of Angela Yu's 100 Days of Python bootcamp. I'm a Linux enthusiast (Arch, by the way), currently diving into Python development. I'm also planning to expand my skills by learning JavaScript, exploring HTML and CSS in greater depth, and working with databases.
+      </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%endblock%}
